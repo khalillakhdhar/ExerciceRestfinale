@@ -4,10 +4,11 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.rest.entities.Rdv;
 import com.rest.repositories.RdvRepository;
-
+@Service
 public class RdvService implements RdvInterface {
 @Autowired
 RdvRepository rdvRepository;

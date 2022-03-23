@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.rest.entities.User;
 import com.rest.repositories.UserRepository;
 
+@Service
 public class UserService implements UserInterface {
 @Autowired
 UserRepository userRepository;
